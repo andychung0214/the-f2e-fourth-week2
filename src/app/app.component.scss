@@ -1,0 +1,56 @@
+h1 img {
+  position: absolute;
+  left: 10.13%;
+  right: 82.88%;
+  top: 3.9%;
+  bottom: 87.53%;
+}
+
+h1:nth-child(2) {
+  position: absolute;
+  left: 17.08%;
+  right: 66.24%;
+  top: 10.19%;
+  bottom: 87.2%;
+}
+
+.mainBorder {
+  position: absolute;
+  width: 299px;
+  height: 384px;
+  left: 38px;
+  top: 100px;
+
+  background: #FFFFFF;
+  /* gray */
+
+  border: 2px dashed #B7B7B7;
+  border-radius: 26px;
+}
+
+.mainBorder img {
+  top: 48.5px;
+  left: 82.5px;
+  width: 134px;
+  height: 110px;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-footer {
+  width: 183px;
+  height: 17px;
+
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Black */
+
+  color: #424242;
+}
