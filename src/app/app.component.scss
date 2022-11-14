@@ -14,7 +14,34 @@ h1:nth-child(2) {
   bottom: 87.2%;
 }
 
+h2 {
+  position: absolute;
+  left: 70.67%;
+  right: 10.13%;
+  top: 9.3%;
+  bottom: 86.81%;
+
+  /* Noto Sans TC */
+
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .mainBorder {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 82px;
+  gap: 20px;
+
   position: absolute;
   width: 299px;
   height: 384px;
@@ -35,13 +62,22 @@ h1:nth-child(2) {
   height: 110px;
   /* Inside auto layout */
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  // flex: none;
+  // order: 0;
+  // flex-grow: 0;
+}
+
+.mainBorder {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
 .page-footer {
-  width: 183px;
+  position: absolute;
+  top: 96%;
+  left: 94px;
+  // width: 183px;
   height: 17px;
 
   font-family: 'Noto Sans TC';
@@ -53,4 +89,102 @@ h1:nth-child(2) {
   /* Black */
 
   color: #424242;
+}
+
+.header-container {
+  display: flex;
+}
+
+.mainBorder input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 209px;
+  height: 60px;
+
+  /* Gradient */
+
+  background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+  border-radius: 16px;
+}
+
+h3 {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* Gradient */
+
+  background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.img-pink-girl {
+  width: 142px;
+  height: 202px;
+  position: absolute;
+  left: 2.4%;
+  right: 59.73%;
+  top: 61.77%;
+  bottom: 7.95%;
+}
+
+.img-yellow-girl {
+  width: 97px;
+  height: 164px;
+  position: absolute;
+  left: 35.47%;
+  right: 38.67%;
+  top: 68.52%;
+  bottom: 6.9%;
+}
+
+.img-blue-girl {
+  width: 108px;
+  height: 188px;
+  position: absolute;
+  left: 66.13%;
+  right: 5.07%;
+  top: 62.82%;
+  bottom: 9%;
+}
+
+.img-plant {
+  width: 76px;
+  height: 127px;
+  position: absolute;
+  left: 57.07%;
+  right: 22.67%;
+  top: 74.06%;
+  bottom: 6.9%;
+}
+
+.img-bag {
+  width: 21px;
+  height: 27px;
+  position: absolute;
+  left: 69.33%;
+  right: 25.07%;
+  top: 89.81%;
+  bottom: 6.15%;
+}
+
+.img-grass {
+  width: 355px;
+  height: 59px;
+  position: absolute;
+  left: 4.27%;
+  right: 1.07%;
+  top: 87.11%;
+  bottom: 4.05%;
+  z-index: -4;
 }
