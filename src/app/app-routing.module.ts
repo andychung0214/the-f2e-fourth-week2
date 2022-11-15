@@ -1,3 +1,4 @@
+import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { RecordComponent } from './record/record.component';
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'error',
+    component: ErrorComponent
   },
   {
     path: '',
