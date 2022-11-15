@@ -1,3 +1,5 @@
+import { LoadingComponent } from './loading/loading.component';
+import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: 'error',
     component: ErrorComponent
+  },
+  {
+    path: 'success',
+    component: SuccessComponent
+  },
+  {
+    path: 'loading',
+    component: LoadingComponent
   },
   {
     path: '',

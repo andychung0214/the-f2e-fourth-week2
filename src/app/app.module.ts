@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { RecordComponent } from './record/record.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { SuccessComponent } from './success/success.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 // Note we need a separate function as it's required
@@ -25,7 +27,9 @@ export function playerFactory() {
     AppComponent,
     RecordComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    SuccessComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
