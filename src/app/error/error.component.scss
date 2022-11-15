@@ -1,0 +1,64 @@
+p {
+	position: absolute;
+	width: 220px;
+	height: 32px;
+	left: 77px;
+	top: 334px;
+
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.buttonArea {
+
+  // position: absolute;
+  position: relative;
+
+  width: 260px;
+  height: 56px;
+
+  left: 100px;
+
+  /* Gradient */
+
+  background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+  border-radius: 16px;
+  z-index: -2;
+}
+
+.buttonArea p {
+  position: absolute;
+
+  width: 54px;
+height: 26px;
+
+/* Noto Sans TC */
+
+font-family: 'Noto Sans TC';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+z-index: 2;
+
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
