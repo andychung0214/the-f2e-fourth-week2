@@ -1,0 +1,76 @@
+p {
+  width: 37px;
+  height: 19px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Black */
+
+  color: #424242;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 12px;
+  gap: 16px;
+
+  position: absolute;
+  width: 343px;
+  height: 64px;
+  left: 16px;
+  top: 228px;
+
+  /* White */
+
+  background: #FFFFFF;
+  /* shadow */
+
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.11);
+  border-radius: 13px;
+}
+
+.dataItem span {
+  width: 43px;
+  height: 19px;
+
+  /* Roboto */
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+
+  /* Black */
+
+  color: #424242;
+}
+
+.dataItem h2 {
+  width: 209px;
+  height: 23px;
+
+  /* Noto Sans TC */
+
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+  /* Gradient */
+
+  background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

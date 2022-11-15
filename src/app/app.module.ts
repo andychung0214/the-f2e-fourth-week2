@@ -13,6 +13,13 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { SuccessComponent } from './success/success.component';
 import { LoadingComponent } from './loading/loading.component';
+import { LoadingMbComponent } from './loading-mb/loading-mb.component';
+import { HandWritingComponent } from './hand-writing/hand-writing.component';
+import { PhotoComponent } from './photo/photo.component';
+import { ContractComponent } from './contract/contract.component';
+import { SaveComponent } from './save/save.component';
+import { RecordListComponent } from './record-list/record-list.component';
+import { RecordDetailComponent } from './record-detail/record-detail.component';
 
 
 // Note we need a separate function as it's required
@@ -29,7 +36,14 @@ export function playerFactory() {
     HomeComponent,
     ErrorComponent,
     SuccessComponent,
-    LoadingComponent
+    LoadingComponent,
+    LoadingMbComponent,
+    HandWritingComponent,
+    PhotoComponent,
+    ContractComponent,
+    SaveComponent,
+    RecordListComponent,
+    RecordDetailComponent
   ],
   imports: [
     BrowserModule,
