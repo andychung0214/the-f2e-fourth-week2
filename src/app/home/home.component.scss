@@ -188,3 +188,32 @@ h3 {
   bottom: 4.05%;
   z-index: -4;
 }
+
+
+.fileUpload {
+  position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fileUpload label {
+  display: block;
+    padding: 1em 2em;
+    color: #fff;
+    background: linear-gradient(180deg,#35a483,#077854);
+    box-shadow: 1px 4px 6px rgb(0 0 0 / 11%);
+    border-radius: 16px;
+    border-radius: 0.4em;
+}
+
+.fileUpload #selectFile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+}
