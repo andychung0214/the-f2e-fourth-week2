@@ -4,6 +4,8 @@ import player from 'lottie-web';
 
 import { BrowserModule } from '@angular/platform-browser';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 
 
@@ -20,6 +22,9 @@ import { ContractComponent } from './contract/contract.component';
 import { SaveComponent } from './save/save.component';
 import { RecordListComponent } from './record-list/record-list.component';
 import { RecordDetailComponent } from './record-detail/record-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 
 // Note we need a separate function as it's required
@@ -43,12 +48,15 @@ export function playerFactory() {
     ContractComponent,
     SaveComponent,
     RecordListComponent,
-    RecordDetailComponent
+    RecordDetailComponent,
+    CustomDialogComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LottieModule.forRoot({ player: playerFactory })
+    LottieModule.forRoot({ player: playerFactory }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
