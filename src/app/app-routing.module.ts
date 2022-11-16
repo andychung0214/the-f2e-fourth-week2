@@ -1,3 +1,4 @@
+import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 import { RecordDetailComponent } from './record-detail/record-detail.component';
 import { RecordListComponent } from './record-list/record-list.component';
 import { SaveComponent } from './save/save.component';
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path: 'record-detail',
     component: RecordDetailComponent
+  },
+  {
+    path: 'custom-dialog',
+    component: CustomDialogComponent
   },
   {
     path: '',
