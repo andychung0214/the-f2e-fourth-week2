@@ -1,4 +1,43 @@
-<div class="flex-container">
+<form (ngSubmit)="submitDialog()" class="dialog-form">
+    <h2 mat-dialog-title class="justify-content-center"> {{data.title}} </h2>
+    <div mat-dialog-content>
+        <div *ngIf="data.isDisplayOnly" mat-form-field appearance="fill">
+            <textarea class="note-content" placeholder="輸入文字限 100 字元" disabled>{{data.note}}</textarea>
+        </div>
+        <div *ngIf="!data.isDisplayOnly" mat-form-field appearance="fill">
+            <textarea matInput  class="note-content" maxlength="100" placeholder="輸入文字限 100 字元"></textarea>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="d-flex justify-content-center my-2">
+        <button mat-button type="submit" class="btn btn-info btn-sm mx-2">送出</button>
+        <button mat-button type="button" mat-dialog-close class="btn btn-sm mx-2" (click)="closeDialog()">關閉</button>
+    </div>
+
+</form>
+
+<!-- <form [formGroup]="form" (ngSubmit)="submitDialog()" class="dialog-form">
+    <h2 mat-dialog-title class="justify-content-center"> {{data.title}} </h2>
+    <div mat-dialog-content>
+        <div *ngIf="data.isDisplayOnly" mat-form-field appearance="fill">
+            <textarea class="note-content" placeholder="輸入文字限 100 字元" disabled>{{data.note}}</textarea>
+        </div>
+        <div *ngIf="!data.isDisplayOnly" mat-form-field appearance="fill">
+            <textarea matInput [formControl]="inputDescControl" class="note-content" maxlength="100" placeholder="輸入文字限 100 字元"></textarea>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="d-flex justify-content-center my-2">
+        <button mat-button type="submit" class="btn btn-info btn-sm mx-2" *ngIf="!data.isDisplayOnly">送出</button>
+        <button mat-button type="button" mat-dialog-close class="btn btn-sm mx-2" (click)="closeDialog()">關閉</button>
+    </div>
+
+</form> -->
+
+
+
+
+<!-- <div class="flex-container">
   <h3></h3>
   <app-canvas></app-canvas>
   <input type="" name="" id="signin" >
@@ -27,7 +66,7 @@ debugger
   pdf.save("download.pdf");
 });
 </script>
-</div>
+</div> -->
 
 
 
