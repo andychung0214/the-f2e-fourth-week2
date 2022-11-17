@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { environment } from "../../environments/environment";
 
 
 @Component({
@@ -10,7 +11,7 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 export class LoadingComponent implements OnInit {
   options: AnimationOptions = {
-    path: '/assets/json/GNsign_loading.json',
+    path: `${environment.loadingUrl}`,
   };
 
   animationCreated(animationItem: AnimationItem): void {

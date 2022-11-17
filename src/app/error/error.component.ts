@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { environment } from "../../environments/environment";
 
 @Component({
   selector: 'app-error',
@@ -9,7 +10,7 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 export class ErrorComponent implements OnInit {
   options: AnimationOptions = {
-    path: '/assets/json/wrong.json',
+    path: `${environment.wrongUrl}`,
   };
 
   animationCreated(animationItem: AnimationItem): void {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { environment } from "../../environments/environment";
 
 @Component({
   selector: 'app-success',
@@ -9,7 +10,7 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 export class SuccessComponent implements OnInit {
   options: AnimationOptions = {
-    path: '/assets/json/ok.json',
+    path: `${environment.okUrl}`,
   };
 
   animationCreated(animationItem: AnimationItem): void {

@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  okUrl: '/assets/json/ok.json',
+  wrongUrl: '/assets/json/wrong.json',
+  loadingUrl: '/assets/json/GNsign_loading.json'
 };
 
 /*
