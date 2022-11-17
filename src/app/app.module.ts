@@ -1,12 +1,9 @@
+import { MatDialogModule } from '@angular/material/dialog';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 
 import { BrowserModule } from '@angular/platform-browser';
-
-
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -26,7 +23,6 @@ import { RecordListComponent } from './record-list/record-list.component';
 import { RecordDetailComponent } from './record-detail/record-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
-// import { ConfirmDialogModule } from '@app/layout/confirm-dialog/confirm-dialog.module';
 import { CanvasComponent } from './canvas/canvas.component';
 
 
@@ -57,11 +53,10 @@ export function playerFactory() {
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
     AppRoutingModule,
     LottieModule.forRoot({ player: playerFactory }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

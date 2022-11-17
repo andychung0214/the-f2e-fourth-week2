@@ -2,7 +2,7 @@ import { DialogData } from './../models/dialog-data.model';
 import { Component, OnInit, Inject, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 
 @Component({
@@ -11,7 +11,8 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
   styleUrls: ['./custom-dialog.component.scss']
 })
 export class CustomDialogComponent implements OnInit {
-  form : FormGroup | undefined;
+  // data: string | undefined;
+  // form : FormGroup | undefined;
 
 //   get noteControl(): FormControl {
 //     return this.form.get('note') as FormControl;
@@ -27,20 +28,20 @@ export class CustomDialogComponent implements OnInit {
 
 
   constructor(
-    private formBuilder: FormBuilder,
     public dialogRef: MatDialogRef<CustomDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
+    // console.log(data);
     localStorage.setItem('account-login', '12345678');
-    this.form = this.formBuilder.group({
-      note: [''],
-      title: [''],
-      inputDesc: [''],
-      isDisplayOnly: [''],
-      updateItem: ['']
+  //   this.form = this.formBuilder.group({
+  //     note: [''],
+  //     title: [''],
+  //     inputDesc: [''],
+  //     isDisplayOnly: [''],
+  //     updateItem: ['']
 
-  })
+  // })
   }
 
   closeDialog(): void {

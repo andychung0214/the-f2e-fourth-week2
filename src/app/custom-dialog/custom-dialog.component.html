@@ -1,4 +1,14 @@
-<form (ngSubmit)="submitDialog()" class="dialog-form">
+<div>
+  <h2 mat-dialof-title>溫馨小提醒</h2>
+  <div mat-dialog-content>
+    {{data.content}}
+  </div>
+  <div mat-dialog-content>
+    <button mat-raised-button (click)="closeDialog()" color="warn">OK</button>
+  </div>
+</div>
+
+<!-- <form (ngSubmit)="submitDialog()" class="dialog-form">
     <h2 mat-dialog-title class="justify-content-center"> {{data.title}} </h2>
     <div mat-dialog-content>
         <div *ngIf="data.isDisplayOnly" mat-form-field appearance="fill">
@@ -14,7 +24,7 @@
         <button mat-button type="button" mat-dialog-close class="btn btn-sm mx-2" (click)="closeDialog()">關閉</button>
     </div>
 
-</form>
+</form> -->
 
 <!-- <form [formGroup]="form" (ngSubmit)="submitDialog()" class="dialog-form">
     <h2 mat-dialog-title class="justify-content-center"> {{data.title}} </h2>
