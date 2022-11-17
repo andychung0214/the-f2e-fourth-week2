@@ -20,6 +20,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "confirm-dialog": "^0.1.2",
     "lottie-web": "^5.9.6",
     "ngx-lottie": "^7.0.2",
     "rxjs": "~6.6.0",
