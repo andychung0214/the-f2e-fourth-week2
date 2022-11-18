@@ -21,8 +21,10 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "confirm-dialog": "^0.1.2",
+    "fabric": "^4.5.1",
     "lottie-web": "^5.9.6",
     "ngx-lottie": "^7.0.2",
+    "pdfjs-dist": "^3.0.279",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -31,6 +33,7 @@
     "@angular-devkit/build-angular": "~12.2.14",
     "@angular/cli": "~12.2.14",
     "@angular/compiler-cli": "~12.2.0",
+    "@types/fabric": "^4.5.12",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.8.0",
