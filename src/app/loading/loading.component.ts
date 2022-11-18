@@ -1,3 +1,4 @@
+import { LoadingService } from './loading.service';
 import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
@@ -10,6 +11,7 @@ import { environment } from "../../environments/environment";
   styleUrls: ['./loading.component.scss']
 })
 export class LoadingComponent implements OnInit {
+  animationItem!: AnimationItem;
   options: AnimationOptions = {
     path: `${environment.loadingUrl}`,
   };
@@ -18,9 +20,10 @@ export class LoadingComponent implements OnInit {
     console.log(animationItem);
   }
 
-  constructor() { }
+  constructor(private loadingService: LoadingService) { }
 
   ngOnInit(): void {
+
   }
 
 }
