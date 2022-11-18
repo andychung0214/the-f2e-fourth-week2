@@ -1,0 +1,21 @@
+<div class="head">
+  <div class="page">
+    <img src="assets/images/m-prev.png" alt="">
+    <h2>1 / 2</h2>
+    <img src="assets/images/m-next.png" alt="">
+  </div>
+  <div class="btnFinish">
+    <a [routerLink]="'/#/save'">完成簽署</a>
+  </div>
+</div>
+
+<input id="filePdf" type="file" accept="application/pdf" placeholder="選擇PDF檔案" />
+<!-- <img id="showPDF" src="assets/images/contract-1.png" alt=""> -->
+<canvas id="canvas" style="border: 1px solid #000"> </canvas>
+
+<div class="functionArea">
+   <a [routerLink]="'../signin'"><img src="assets/images/signin.png" alt=""></a>
+  <a [routerLink]="['../check']"><img src="assets/images/check.png" alt=""></a>
+  <a [routerLink]="['../date']"><img src="assets/images/date.png" alt=""></a>
+  <a [routerLink]="['../text']"><img src="assets/images/inputTextSelect.png" alt=""></a>
+</div>

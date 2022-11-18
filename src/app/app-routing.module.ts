@@ -2,7 +2,6 @@ import { CustomDialogComponent } from './custom-dialog/custom-dialog.component';
 import { RecordDetailComponent } from './record-detail/record-detail.component';
 import { RecordListComponent } from './record-list/record-list.component';
 import { SaveComponent } from './save/save.component';
-import { ContractComponent } from './contract/contract.component';
 import { PhotoComponent } from './photo/photo.component';
 import { HandWritingComponent } from './hand-writing/hand-writing.component';
 import { LoadingMbComponent } from './loading-mb/loading-mb.component';
@@ -50,7 +49,32 @@ const routes: Routes = [
   },
   {
     path: 'contract',
-    component: ContractComponent
+    redirectTo: 'contract/home'
+  },
+  {
+    path: 'contract',
+    children: [
+      {
+        path: 'home',
+        loadChildren: () => import('./contract/contract-home/contract-home.module').then(m => m.ContractHomeModule)
+      },
+      {
+        path: 'check',
+        loadChildren: () => import('./contract/contract-check/contract-check.module').then(m => m.ContractCheckModule)
+      },
+      {
+        path: 'text',
+        loadChildren: () => import('./contract/contract-text/contract-text.module').then(m => m.ContractTextModule)
+      },
+      {
+        path: 'date',
+        loadChildren: () => import('./contract/contract-date/contract-date.module').then(m => m.ContractDateModule)
+      },
+      {
+        path: 'signin',
+        loadChildren: () => import('./contract/contract-signin/contract-signin.module').then(m => m.ContractSigninModule)
+      },
+    ]
   },
   {
     path: 'save',
