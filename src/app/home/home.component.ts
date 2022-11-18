@@ -1,3 +1,4 @@
+import { LoadingService } from './../loading/loading.service';
 import { CustomDialogService } from './../services/custom-dialog.service';
 import { Component, Input, OnInit, AfterViewInit, ViewChild, Output, EventEmitter } from '@angular/core';
 
@@ -11,13 +12,26 @@ import { CustomDialogComponent } from './../custom-dialog/custom-dialog.componen
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
   // @Input() customAfterViewInit;
-  desc: string | undefined;
+  @Output() isLoading = new EventEmitter<any>();
+
+  desc = '';
+  percentDone = 1;
+  uploadSuccess = false;
+  fileName = '';
+  fileData = '';
+
+
 
   constructor(public matDialog: MatDialog,
-              private customDialogService: CustomDialogService) { }
+              private customDialogService: CustomDialogService,
+              private loadingService: LoadingService) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.isLoading.emit(true);
+
+  }
 
   alertConfirm() {
     confirm('test confirm windows');
@@ -43,6 +57,27 @@ export class HomeComponent implements OnInit {
 
   //   })
   // }
+  public onFileChange(event: any) {
+    const reader = new FileReader();
 
+    if (event.target.files && event.target.files.length) {
+      this.fileName = event.target.files[0].name;
+      const [file] = event.target.files;
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        localStorage.setItem(this.fileName, reader.result as string);
+        this.loadingService.setIsLoading(false);
+      };
+    }
+  }
+  onClick() {
+    const fileData = localStorage.getItem(this.fileName);
+    // setTimeout(function() {
+    //   //FireFox seems to require a setTimeout for this to work.
+    //   document.body.appendChild(
+    //     document.createElement("iframe")
+    //   ).src = fileData;
+    // }, 0);
+  }
 
 }

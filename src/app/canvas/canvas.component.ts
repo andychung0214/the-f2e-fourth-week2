@@ -15,6 +15,7 @@ import { switchMap, takeUntil, pairwise } from 'rxjs/operators';
   styleUrls: ['./canvas.component.scss']
 })
 export class CanvasComponent implements AfterViewInit {
+  imgUrl: string;
 
   @ViewChild('canvas') public canvas: ElementRef | undefined;
   @ViewChild('screen') public screen: ElementRef | undefined;

@@ -18,7 +18,7 @@
 <div class="fileUpload">
 
   <label for="selectFile">選擇檔案</label>
-  <input id="selectFile" class="selectFile" type="file">
+  <input id="selectFile" class="selectFile" type="file" (change)="onFileChange($event)">
 </div>
   <h3>(限10MB 內的PDF或JPG檔)</h3>
   <button (click)="openDialog('檔案超 過10MB，請重新選擇')">Test Dialog</button>

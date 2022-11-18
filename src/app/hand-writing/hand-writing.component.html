@@ -1,5 +1,3 @@
-<!-- <div class="container"> -->
-
   <div class="switchFunction">
     <div class="btnHand">
       <a [routerLink]="'/hand-writing'" target="_self">手寫簽名</a>
@@ -15,16 +13,35 @@
     <img class="red" src="../../assets/images/red.png" alt="">
   </div>
 
-  <div class="signArea">
+  <!-- <div class="signArea">
     <h3>在此書寫你的簽名</h3>
-  </div>
+    <canvas
+  id="canvas"
+  width="343"
+  height="200"
+  style="border: 1px solid black;"
+></canvas>
 
+
+
+  </div> -->
+
+  <canvas
+  id="canvas"
+  class="signArea"
+  width="343"
+  height="200"
+  style="border: 1px solid black;"
+></canvas>
+  <img src="{{ imgUrl }}" width="200" height="200" />
   <div class="resultFunction">
     <div class="btnClear">
-      <a [routerLink]="'/hand-writing'" target="_self">清除</a>
+      <a id="clear" [routerLink]="'/hand-writing'" target="_self">清除</a>
     </div>
     <div class="btnCreate">
-      <a [routerLink]="'/photo'" target="_self">建立簽名</a>
+      <!-- <a [routerLink]="'/contract'" target="_self">建立簽名</a> -->
+      <a (click)="saveImage()" target="_self">建立簽名</a>
     </div>
   </div>
-<!-- </div> -->
+
+
