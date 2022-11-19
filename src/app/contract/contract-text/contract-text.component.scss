@@ -1,93 +1,97 @@
-.head {
+@media only screen and (max-width: 375px) {
 
-  display: flex;
-flex-direction: row;
-justify-content: center;
+  .head {
 
-align-items: center;
-padding: 12px 16px;
-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-
-// width: 204px;
-// height: 58px;
-
-// background: #FFFFFF;
-// border-radius: 16px;
-
-}
-
-.page {
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-display: flex;
-}
-
-.btnFinish {
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
-
-width: 130px;
-height: 58px;
-
-/* Gradient */
-
-background: linear-gradient(180deg, #35A483 0%, #077854 100%);
-border-radius: 16px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-}
-
-.btnFinish a {
-  width: 72px;
-height: 26px;
-
-/* Noto Sans TC */
-
-font-family: 'Noto Sans TC';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
-/* identical to box height */
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
 
 
-/* White */
+    // width: 204px;
+    // height: 58px;
 
-color: #FFFFFF;
-}
+    // background: #FFFFFF;
+    // border-radius: 16px;
 
-.functionArea {
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 16px;
-gap: 8px;
+  }
 
-width: 343px;
-height: 72px;
+  .page {
 
-/* White */
+    /* Inside auto layout */
 
-background: #FFFFFF;
-border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+  }
 
-/* Inside auto layout */
+  .btnFinish {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 
-flex: none;
-order: 0;
-flex-grow: 0;
+    width: 130px;
+    height: 58px;
+
+    /* Gradient */
+
+    background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .btnFinish a {
+    width: 72px;
+    height: 26px;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    /* White */
+
+    color: #FFFFFF;
+  }
+
+  .functionArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+
+    width: 343px;
+    height: 72px;
+
+    /* White */
+
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
 }

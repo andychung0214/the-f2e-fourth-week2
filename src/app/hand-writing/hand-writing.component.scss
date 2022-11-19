@@ -1,253 +1,258 @@
-// .container {
-//   position: relative;
-//   max-width: 100%;
-//   height: 100vh;
-//   background-color: #F0F0F0;
-//   z-index: -99;
-// }
-p {
-	position: absolute;
-	width: 220px;
-	height: 32px;
-	left: 143px;
-	top: 334px;
+@media only screen and (max-width: 375px) {
 
-	font-family: 'Noto Sans TC';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 32px;
-}
+  // .container {
+  //   position: relative;
+  //   max-width: 100%;
+  //   height: 100vh;
+  //   background-color: #F0F0F0;
+  //   z-index: -99;
+  // }
+  p {
+    position: absolute;
+    width: 220px;
+    height: 32px;
+    left: 143px;
+    top: 334px;
 
-.switchFunction {
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
 
-position: absolute;
-width: 240px;
-height: 40px;
-left: 67px;
-top: 28px;
+  .switchFunction {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
 
-/* White */
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    left: 67px;
+    top: 28px;
 
-background: #FFFFFF;
-border-radius: 14px;
-}
+    /* White */
 
-.btnHand{
+    background: #FFFFFF;
+    border-radius: 14px;
+  }
 
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 12px;
+  .btnHand {
 
-width: 120px;
-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
 
-/* Gradient */
+    width: 120px;
+    height: 40px;
 
-background: linear-gradient(180deg, #35A483 0%, #077854 100%);
-border-radius: 14px;
-}
+    /* Gradient */
 
-
-
-.btnHand a {
-  position: absolute;
-  width: 64px;
-  height: 23px;
-
-  /* Noto Sans TC */
-
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-
-  /* White */
-
-  color: #FFFFFF;
-
-}
-
-.btnPhoto, .btnCreate {
-
-  // position: absolute;
-  position: relative;
-
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 12px;
-
-width: 120px;
-height: 40px;
-
-border-radius: 14px;
-}
-
-.btnPhoto a {
-  width: 80px;
-  height: 23px;
-
-  /* Noto Sans TC */
-
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-
-  /* Purple */
-
-  color: #1C8B6A;
-}
-
-.signArea {
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
-
-position: absolute;
-width: 343px;
-height: 200px;
-left: 16px;
-top: 178px;
-
-/* White */
-
-background: #FFFFFF;
-border-radius: 26px;
-}
-
-h3 {
-  width: 144px;
-height: 26px;
-
-/* Noto Sans TC */
-
-font-family: 'Noto Sans TC';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
-/* identical to box height */
-
-display: flex;
-align-items: center;
-text-align: center;
-
-/* gray */
-
-color: #B7B7B7;
-}
-
-.btnClear {
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 12px;
-
-position: absolute;
-width: 165.5px;
-height: 56px;
-left: 16px;
-top: 403px;
-
-/* White */
-
-background: #FFFFFF;
-/* Purple */
-
-border: 1px solid #1C8B6A;
-border-radius: 16px;
-}
-
-.btnClear a {
-  width: 36px;
-height: 26px;
-
-/* Noto Sans TC */
-
-font-family: 'Noto Sans TC';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
-/* identical to box height */
+    background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+    border-radius: 14px;
+  }
 
 
-/* Purple */
 
-color: #1C8B6A;
-}
+  .btnHand a {
+    position: absolute;
+    width: 64px;
+    height: 23px;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* White */
+
+    color: #FFFFFF;
+
+  }
+
+  .btnPhoto,
+  .btnCreate {
+
+    // position: absolute;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+
+    width: 120px;
+    height: 40px;
+
+    border-radius: 14px;
+  }
+
+  .btnPhoto a {
+    width: 80px;
+    height: 23px;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Purple */
+
+    color: #1C8B6A;
+  }
+
+  .signArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 343px;
+    height: 200px;
+    left: 16px;
+    top: 178px;
+
+    /* White */
+
+    background: #FFFFFF;
+    border-radius: 26px;
+  }
+
+  h3 {
+    width: 144px;
+    height: 26px;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* gray */
+
+    color: #B7B7B7;
+  }
+
+  .btnClear {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+
+    position: absolute;
+    width: 165.5px;
+    height: 56px;
+    left: 16px;
+    top: 403px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Purple */
+
+    border: 1px solid #1C8B6A;
+    border-radius: 16px;
+  }
+
+  .btnClear a {
+    width: 36px;
+    height: 26px;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
 
 
-.btnCreate {
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 12px;
+    /* Purple */
 
-position: absolute;
-width: 165.5px;
-height: 56px;
-left: 193px;
-top: 403px;
-
-/* Gradient */
-
-background: linear-gradient(180deg, #35A483 0%, #077854 100%);
-border-radius: 16px;
-}
-
-.btnCreate a {
-  width: 72px;
-height: 26px;
-
-/* Noto Sans TC */
-
-font-family: 'Noto Sans TC';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
-/* identical to box height */
+    color: #1C8B6A;
+  }
 
 
-/* White */
+  .btnCreate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
 
-color: #FFFFFF;
-}
+    position: absolute;
+    width: 165.5px;
+    height: 56px;
+    left: 193px;
+    top: 403px;
 
-.brushColor {
-  position: absolute;
-// max-width: 100%;
-height: 45px;
-left: 114px;
-top: 121px;
-}
+    /* Gradient */
 
-.black,
-.blue,
-.red {
-  width: 45px;
-  height: 45px;
-padding-right: 6%;
+    background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+    border-radius: 16px;
+  }
+
+  .btnCreate a {
+    width: 72px;
+    height: 26px;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    /* White */
+
+    color: #FFFFFF;
+  }
+
+  .brushColor {
+    position: absolute;
+    // max-width: 100%;
+    height: 45px;
+    left: 114px;
+    top: 121px;
+  }
+
+  .black,
+  .blue,
+  .red {
+    width: 45px;
+    height: 45px;
+    padding-right: 6%;
+
+  }
 
 }

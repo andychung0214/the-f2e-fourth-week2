@@ -1,3 +1,7 @@
-.flex-container {
-  overflow-y: hidden;
+@media only screen and (max-width: 375px) {
+
+  .flex-container {
+    overflow-y: hidden;
+  }
 }
+

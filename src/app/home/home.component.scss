@@ -1,25 +1,50 @@
 h1 img {
+  height: 57.14533233642578px;
+  width: 26.210506439208984px;
+  left: 40px;
+  top: 28px;
+  border-radius: 0px;
+
   position: absolute;
-  left: 10.13%;
-  right: 82.88%;
-  top: 3.9%;
-  bottom: 87.53%;
+  left: 3.12%;
+  right: 94.83%;
+  top: 3.89%;
+  bottom: 88.17%;
 }
 
 h1:nth-child(2) {
   position: absolute;
-  left: 17.08%;
-  right: 66.24%;
-  top: 10.19%;
-  bottom: 87.2%;
+  left: 5.17%;
+  right: 89.94%;
+  top: 9.41%;
+  bottom: 88.17%;
 }
 
-h2 {
-  position: absolute;
-  left: 70.67%;
-  right: 10.13%;
-  top: 9.3%;
-  bottom: 86.81%;
+.header-container {
+  display: flex;
+  margin: 0 16%;
+  justify-content: space-between;
+  // height: 44px;
+  // width: 136px;
+  // left: 1002px;
+  // top: 31px;
+  // border-radius: 16px;
+  // padding: 10px;
+
+  // position: absolute;
+  // left: 78.28%;
+  // right: 11.09%;
+  // top: 4.31%;
+  // bottom: 89.58%;
+}
+
+.header-container a {
+  height: 17.39264678955078px;
+  width: 62.57482147216797px;
+  left: 66.21044921875px;
+  top: 67.7529296875px;
+  border-radius: 0px;
+
 
   /* Noto Sans TC */
 
@@ -28,57 +53,56 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  /* identical to box height */
+
+
+  /* Purple */
+
+  color: #1C8B6A;
 }
 
-.mainBorder {
-  box-sizing: border-box;
-
-  /* Auto layout */
-
+.freeUse {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px 82px;
-  gap: 20px;
+  padding: 10px;
+  gap: 12px;
 
   position: absolute;
-  width: 299px;
-  height: 384px;
-  left: 38px;
-  top: 100px;
+  left: 9.53%;
+  right: 72.89%;
+  top: 14.58%;
+  bottom: 76.81%;
 
-  background: #FFFFFF;
-  /* gray */
+  /* Gradient */
 
-  border: 2px dashed #B7B7B7;
-  border-radius: 26px;
+  background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+  border-radius: 34px 0px;
 }
 
-.mainBorder img {
-  top: 48.5px;
-  left: 82.5px;
-  width: 134px;
-  height: 110px;
-  /* Inside auto layout */
-
-  // flex: none;
-  // order: 0;
-  // flex-grow: 0;
+.freeUse a {
+  font-family: Noto Sans TC;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
 }
 
-.mainBorder {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-}
-
-.page-footer {
-  position: absolute;
-  top: 96%;
-  left: 94px;
-  // width: 183px;
+.page-right-down {
   height: 17px;
+  width: 198px;
+  left: 1032px;
+  top: 686px;
+  border-radius: nullpx;
+  position: absolute;
+
+  left: 72.3%;
+  right: 1.41%;
+  top: 95.28%;
+  bottom: 2.36%;
 
   font-family: 'Noto Sans TC';
   font-style: normal;
@@ -89,35 +113,171 @@ h2 {
   /* Black */
 
   color: #424242;
+
 }
 
-.header-container {
-  display: flex;
+.mainBackground {
+  height: 74%;
+  width: 84%;
+  border-radius: 34px;
+  position: absolute;
+  left: 2%;
+  right: 9.53%;
+  top: 14.58%;
+  bottom: 7.92%;
+  background: rgba(240, 240, 240, 0.58);
+  border-radius: 34px;
+  border: 1px solid;
 }
 
-.mainBorder input {
+.mainBorder {
+  height: 376px;
+  width: 792px;
+  left: 628px;
+  top: 136px;
+  border-radius: 26px;
+  padding: 20px 10px 82px 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
-
-  width: 209px;
-  height: 60px;
-
-  /* Gradient */
-
-  background: linear-gradient(180deg, #35A483 0%, #077854 100%);
-  border-radius: 16px;
+  padding: 20px 10px 82px;
+  grid-gap: 20px;
+  gap: 20px;
+  position: absolute;
+  right: 18.36%;
+  bottom: 28.89%;
+  background: #FFFFFF;
+  border: 2px dashed #B7B7B7;
+  border-radius: 26px;
 }
 
-h3 {
+.img-desktop-plant {
+  height: 305px;
+  width: 150px;
+  left: 150px;
+  top: 415px;
+  border-radius: 0px;
+  position: absolute;
+  left: -2.28%;
+  right: 76.56%;
+  top: 88.64%;
+  bottom: 0%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
+  // background: url(.png);
+}
+
+.img-glass {
+  height: 62px;
+  width: 243px;
+  border-radius: 0px;
+  position: absolute;
+  left: 0%;
+  right: 81.02%;
+  top: 69.31%;
+  bottom: 22.08%;
+
+}
+
+.img-pink-girl {
+  height: 268px;
+  width: 189px;
+  border-radius: 0px;
+  position: absolute;
+  left: 42.34%;
+  right: 42.89%;
+  top: 52.92%;
+  bottom: 9.86%;
+}
+
+.img-yellow-girl {
+  height: 218px;
+  width: 130px;
+  // left: 784px;
+  // top: 445px;
+  border-radius: 0px;
+  position: absolute;
+  left: 61.25%;
+  right: 28.59%;
+  top: 61.81%;
+  bottom: 7.92%;
+}
+
+
+.img-blue-girl {
+  height: 248px;
+  width: 142px;
+  // left: 937px;
+  // top: 396px;
+  border-radius: 0px;
+  position: absolute;
+  left: 73.2%;
+  right: 15.7%;
+  top: 55%;
+  bottom: 10.56%;
+}
+
+.img-yellow-man {
+  height: 218px;
+  width: 130px;
+  border-radius: 0px;
+  position: absolute;
+  left: 88.25%;
+  right: 28.59%;
+  top: 43.81%;
+  bottom: 7.92%;
+}
+
+.img-plant {
+  height: 170px;
+  width: 100px;
+  left: 892px;
+  top: 493px;
+  border-radius: 0px;
+  position: absolute;
+  // left: 69.69%;
+  right: 22.5%;
+  // top: 68.47%;
+  bottom: 7.92%;
+}
+
+.img-bag {
+  height: 37px;
+  width: 27px;
+  left: 954px;
+  top: 632px;
+  border-radius: 0px;
+  position: absolute;
+  // left: 74.53%;
+  right: 23.36%;
+  // top: 87.78%;
+  bottom: 7.08%;
+}
+
+.img-grass {
+  height: 62px;
+  width: 243px;
+  border-radius: 0px;
+  position: absolute;
+  left: -3%;
+  right: 81.02%;
+  top: 101.31%;
+  bottom: 22.08%;
+  z-index: -2;
+}
+
+.logoText {
+  height: 72px;
+  width: 150px;
+  left: 166px;
+  top: 222px;
+  border-radius: nullpx;
   font-family: 'Noto Sans TC';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
 
   /* Gradient */
 
@@ -125,95 +285,293 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  // text-fill-color: transparent;
 }
 
-.img-pink-girl {
-  width: 142px;
-  height: 202px;
+.logoDesc {
+  //styleName: Noto Sans TC;
+  font-family: Noto Sans TC;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+
   position: absolute;
-  left: 2.4%;
-  right: 59.73%;
-  top: 61.77%;
-  bottom: 7.95%;
+  left: 13.2%;
+  right: 65.08%;
+  top: 41.67%;
+  bottom: 47.5%;
+
+  /* Noto Sans TC */
+
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  /* Black */
+
+  color: #424242;
+
 }
 
-.img-yellow-girl {
-  width: 97px;
-  height: 164px;
+.img-down-plant {
+  height: 255px;
+  width: 122px;
+  left: 1158px;
+  top: 255px;
+  border-radius: 0px;
   position: absolute;
-  left: 35.47%;
-  right: 38.67%;
-  top: 68.52%;
-  bottom: 6.9%;
-}
+  left: 108.47%;
+  right: 0%;
+  top: -23.58%;
+  bottom: 29.17%;
 
-.img-blue-girl {
-  width: 108px;
-  height: 188px;
-  position: absolute;
-  left: 66.13%;
-  right: 5.07%;
-  top: 62.82%;
-  bottom: 9%;
-}
-
-.img-plant {
-  width: 76px;
-  height: 127px;
-  position: absolute;
-  left: 57.07%;
-  right: 22.67%;
-  top: 74.06%;
-  bottom: 6.9%;
-}
-
-.img-bag {
-  width: 21px;
-  height: 27px;
-  position: absolute;
-  left: 69.33%;
-  right: 25.07%;
-  top: 89.81%;
-  bottom: 6.15%;
-}
-
-.img-grass {
-  width: 355px;
-  height: 59px;
-  position: absolute;
-  left: 4.27%;
-  right: 1.07%;
-  top: 87.11%;
-  bottom: 4.05%;
-  z-index: -4;
+  // transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 
-.fileUpload {
-  position: relative;
+.desktopMode,
+.freeUse {
+  display: block;
+}
+
+.mobileMode {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+
+
+
+  h1 img {
+    position: absolute;
+    left: 10.13%;
+    right: 82.88%;
+    top: 3.9%;
+    bottom: 87.53%;
+  }
+
+  h1:nth-child(2) {
+    position: absolute;
+    left: 17.08%;
+    right: 66.24%;
+    top: 10.19%;
+    bottom: 87.2%;
+  }
+
+  h2 {
+    position: absolute;
+    left: 70.67%;
+    right: 10.13%;
+    top: 9.3%;
+    bottom: 86.81%;
+
+    /* Noto Sans TC */
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .mainBorder {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 82px;
+    gap: 20px;
+
+    position: absolute;
+    width: 299px;
+    height: 384px;
+    left: 38px;
+    top: 100px;
+
+    background: #FFFFFF;
+    /* gray */
+
+    border: 2px dashed #B7B7B7;
+    border-radius: 26px;
+  }
+
+  .mainBorder img {
+    top: 48.5px;
+    left: 82.5px;
+    width: 134px;
+    height: 110px;
+    /* Inside auto layout */
+
+    // flex: none;
+    // order: 0;
+    // flex-grow: 0;
+  }
+
+  .mainBorder {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .page-footer {
+    position: absolute;
+    top: 96%;
+    left: 94px;
+    // width: 183px;
+    height: 17px;
+
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+
+    /* Black */
+
+    color: #424242;
+  }
+
+  .header-container {
+    display: flex;
+  }
+
+  .mainBorder input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 209px;
+    height: 60px;
+
+    /* Gradient */
+
+    background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+    border-radius: 16px;
+  }
+
+  h3 {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* Gradient */
+
+    background: linear-gradient(180deg, #35A483 0%, #077854 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .img-pink-girl {
+    width: 142px;
+    height: 202px;
+    position: absolute;
+    left: 2.4%;
+    right: 59.73%;
+    top: 61.77%;
+    bottom: 7.95%;
+  }
+
+  .img-yellow-girl {
+    width: 97px;
+    height: 164px;
+    position: absolute;
+    left: 35.47%;
+    right: 38.67%;
+    top: 68.52%;
+    bottom: 6.9%;
+  }
+
+  .img-blue-girl {
+    width: 108px;
+    height: 188px;
+    position: absolute;
+    left: 66.13%;
+    right: 5.07%;
+    top: 62.82%;
+    bottom: 9%;
+  }
+
+  .img-plant {
+    width: 76px;
+    height: 127px;
+    position: absolute;
+    left: 57.07%;
+    right: 22.67%;
+    top: 74.06%;
+    bottom: 6.9%;
+  }
+
+  .img-bag {
+    width: 21px;
+    height: 27px;
+    position: absolute;
+    left: 69.33%;
+    right: 25.07%;
+    top: 89.81%;
+    bottom: 6.15%;
+  }
+
+  .img-grass {
+    width: 355px;
+    height: 59px;
+    position: absolute;
+    left: 4.27%;
+    right: 1.07%;
+    top: 87.11%;
+    bottom: 4.05%;
+    z-index: -4;
+  }
+
+
+  .fileUpload {
+    position: relative;
     display: inline-block;
     cursor: pointer;
-}
+  }
 
-.fileUpload label {
-  display: block;
+  .fileUpload label {
+    display: block;
     padding: 1em 2em;
     color: #fff;
-    background: linear-gradient(180deg,#35a483,#077854);
+    background: linear-gradient(180deg, #35a483, #077854);
     box-shadow: 1px 4px 6px rgb(0 0 0 / 11%);
     border-radius: 16px;
     border-radius: 0.4em;
-}
+  }
 
-.fileUpload #selectFile {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  font-size: 1;
-  width: 0;
-  height: 100%;
-  opacity: 0;
+  .fileUpload #selectFile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .desktopMode,
+  .freeUse {
+    display: none;
+  }
+
+  .mobileMode {
+    display: block;
+  }
 }
