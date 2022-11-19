@@ -1,3 +1,4 @@
+import { InfoService } from './../services/info.service';
 import { LoadingService } from './../loading/loading.service';
 import { CustomDialogService } from './../services/custom-dialog.service';
 import { Component, Input, OnInit, AfterViewInit, ViewChild, Output, EventEmitter } from '@angular/core';
@@ -5,6 +6,8 @@ import { Component, Input, OnInit, AfterViewInit, ViewChild, Output, EventEmitte
 import { MatDialog } from '@angular/material/dialog';
 
 import { CustomDialogComponent } from './../custom-dialog/custom-dialog.component';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -26,7 +29,9 @@ export class HomeComponent implements OnInit {
 
   constructor(public matDialog: MatDialog,
               private customDialogService: CustomDialogService,
-              private loadingService: LoadingService) { }
+              private loadingService: LoadingService,
+              private router: Router,
+              private infoService: InfoService) { }
 
   ngOnInit(): void {
     this.isLoading.emit(true);
@@ -57,16 +62,42 @@ export class HomeComponent implements OnInit {
 
   //   })
   // }
+
+  readBlob(blob) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.addEventListener("load", () => resolve(reader.result));
+      reader.addEventListener("error", reject);
+      reader.readAsDataURL(blob);
+    });
+  }
+
   public onFileChange(event: any) {
     const reader = new FileReader();
 
     if (event.target.files && event.target.files.length) {
+      console.log('event.target.files[0]=', event.target.files[0]);
+
+
       this.fileName = event.target.files[0].name;
       const [file] = event.target.files;
+      // localStorage.setItem(this.fileName, this.readBlob(event.target.files[0]));
+
       reader.readAsDataURL(file);
+      // debugger
+
+      // localStorage.removeItem('pdfFile');
+      // localStorage.setItem('pdfFile', JSON.stringify(file));
+
+      // localStorage.removeItem('pdfFileName');
+      // localStorage.setItem('pdfFileName', this.fileName );
+
       reader.onload = () => {
-        localStorage.setItem(this.fileName, reader.result as string);
+        localStorage.removeItem('pdfFile');
+        localStorage.setItem('pdfFile', reader.result as string);
         this.loadingService.setIsLoading(false);
+        this.router.navigateByUrl("/hand-writing");
+
       };
     }
   }

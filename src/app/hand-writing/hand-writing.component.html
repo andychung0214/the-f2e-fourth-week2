@@ -1,19 +1,19 @@
-  <div class="switchFunction">
-    <div class="btnHand">
-      <a [routerLink]="'/hand-writing'" target="_self">手寫簽名</a>
-    </div>
-    <div class="btnPhoto">
-      <a [routerLink]="'/photo'" target="_self">匯入簽名檔</a>
-    </div>
+<div class="switchFunction">
+  <div class="btnHand">
+    <a [routerLink]="'/hand-writing'" target="_self">手寫簽名</a>
   </div>
-
-  <div class="brushColor">
-    <img class="black" src="../../assets/images/blackSelect.png" alt="">
-    <img class="blue" src="../../assets/images/blue.png" alt="">
-    <img class="red" src="../../assets/images/red.png" alt="">
+  <div class="btnPhoto">
+    <a [routerLink]="'/photo'" target="_self">匯入簽名檔</a>
   </div>
+</div>
 
-  <!-- <div class="signArea">
+<div class="brushColor">
+  <img class="black" src="../../assets/images/blackSelect.png" alt="">
+  <img class="blue" src="../../assets/images/blue.png" alt="">
+  <img class="red" src="../../assets/images/red.png" alt="">
+</div>
+
+<!-- <div class="signArea">
     <h3>在此書寫你的簽名</h3>
     <canvas
   id="canvas"
@@ -26,22 +26,14 @@
 
   </div> -->
 
-  <canvas
-  id="canvas"
-  class="signArea"
-  width="343"
-  height="200"
-  style="border: 1px solid black;"
-></canvas>
-  <img src="{{ imgUrl }}" width="200" height="200" />
-  <div class="resultFunction">
-    <div class="btnClear">
-      <a id="clear" [routerLink]="'/hand-writing'" target="_self">清除</a>
-    </div>
-    <div class="btnCreate">
-      <!-- <a [routerLink]="'/contract'" target="_self">建立簽名</a> -->
-      <a (click)="saveImage()" target="_self">建立簽名</a>
-    </div>
+<canvas id="canvas" class="signArea" width="343" height="200" style="border: 1px solid black;"></canvas>
+<img src="{{ imgUrl }}" width="200" height="200" [style.display]="'none'" />
+<div class="resultFunction">
+  <div class="btnClear">
+    <a id="clear" [routerLink]="'/hand-writing'" target="_self">清除</a>
   </div>
-
-
+  <div class="btnCreate">
+    <!-- <a [routerLink]="'/contract'" target="_self">建立簽名</a> -->
+    <a (click)="saveImage()" target="_self">建立簽名</a>
+  </div>
+</div>

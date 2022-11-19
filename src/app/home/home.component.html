@@ -1,17 +1,73 @@
-<header>
+<div class="desktopMode">
+
+  <div class="header-container">
+
+    <h1>
+      <img class="logo" src="assets/images/m-logo.png" alt="">
+      GNSign
+    </h1>
+    <a [routerLink]="'/record'">
+        <h2>歷史紀錄</h2>
+    </a>
+
+  </div>
+  <div class="mainBackground">
+
+    <div class="freeUse"><a href="">免費試用版</a></div>
+    <p class="logoText">小綠簽</p>
+    <div class="logoDesc">護樹、永續、減碳的綠色生活
+響應環保無紙化電子簽署，
+省時便利又環保。
+</div>
+  <img class="img-glass" src="assets/images/grass.png" alt="">
+  <img class="img-desktop-plant" src="assets/images/plant.png" alt="">
+  <img class="img-down-plant" src="assets/images/down-plant.png" alt="">
+
+    <div class="mainBorder">
+
+      <img src="assets/images/m-pdf-jpg.png" alt="">
+
+      <div class="fileUpload">
+
+        <label for="selectFile">選擇檔案</label>
+        <input id="selectFile" class="selectFile" type="file" (change)="onFileChange($event)">
+      </div>
+      <div class="textStyle">(限10MB 內的PDF或JPG檔)</div>
+      <div class="textStyle">或拖移檔案到此處</div>
+      <button (click)="openDialog('檔案超 過10MB，請重新選擇')">Test Dialog</button>
+
+  </div>
+  <img class="img-pink-girl" src="assets/images/m-pink-girl.png" alt="">
+  <img class="img-yellow-girl" src="assets/images/m-yellow-girl.png" alt="">
+  <img class="img-blue-girl" src="assets/images/m-blue-girl.png" alt="">
+  <img class="img-yellow-man" src="assets/images/yellow-man.png" alt="">
+  <img class="img-plant" src="assets/images/m-plant.png" alt="">
+  <img class="img-bag" src="assets/images/m-bag.png" alt="">
+  <img class="img-grass" src="assets/images/m-grass.png" alt="">
+
+  <div class="page-right-down">
+
+    小綠簽 © <a href="https://github.com/andychung0214" target="_blank">Crown Chung</a> / Design: <a
+      href="https://www.behance.net/KT_Designer" target="_blank">KT</a>
+  </div>
+
+    </div>
+  </div>
+
+
+<div class="mobileMode">
+  <header>
 
   <h1>
     <img class="logo" src="assets/images/m-logo.png" alt="">
   </h1>
   <h1>GNSign</h1>
-
   <div class="header-container">
 
     <a [routerLink]="'/record'"><h2>歷史紀錄</h2></a>
   </div>
-</header>
-
-<div class="mainBorder">
+  </header>
+  <div class="mainBorder">
 
   <img src="assets/images/m-pdf-jpg.png" alt="">
 
@@ -36,3 +92,5 @@
   小綠簽 © <a href="https://github.com/andychung0214" target="_blank">Crown Chung</a> / Design: <a
     href="https://www.behance.net/KT_Designer" target="_blank">KT</a>
 </footer>
+
+</div>

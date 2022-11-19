@@ -74,7 +74,8 @@ export class HandWritingComponent implements AfterViewInit {
     let img = canvas.toDataURL('image/png');
     console.log(img);
     this.imgUrl = img;
-    localStorage.clear();
+    // localStorage.clear();
+    localStorage.removeItem("img");
     localStorage.setItem("img", img);
     // location.href('/#/contract');
     this.router.navigateByUrl("/contract");

@@ -1,9 +1,12 @@
+import { getDocument, GlobalWorkerOptions, version } from 'pdfjs-dist';
 import { Component, ElementRef, VERSION, ViewChild, OnInit } from "@angular/core";
 import * as pdfjsLib from 'pdfjs-dist';
+// import { getDocument, GlobalWorkerOptions, version } from 'pdfjs-dist';
 if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
   // const WORKER_URL = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
   // pdfjsLib.GlobalWorkerOptions.workerSrc = WORKER_URL;
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdn.jsdelivr.net/npm/pdfjs-dist@3.0.279/build/pdf.worker.js';
+  // pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdn.jsdelivr.net/npm/pdfjs-dist@3.0.279/build/pdf.worker.js';
+  GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${version}/pdf.worker.js`;
 }
 
 const Base64Prefix = "data:application/pdf;base64,";
@@ -16,7 +19,7 @@ const Base64Prefix = "data:application/pdf;base64,";
 export class ContractHomeComponent implements OnInit {
   @ViewChild("myCanvas", { static: false }) canvas: ElementRef;
   pdfData: string;
-  data: string;
+  data: string | undefined;
 
   constructor() { }
 
@@ -24,14 +27,23 @@ export class ContractHomeComponent implements OnInit {
     this.initRun();
   }
 
+  readBlob(blob) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.addEventListener("load", () => resolve(reader.result));
+      reader.addEventListener("error", reject);
+      reader.readAsDataURL(blob);
+    });
+  }
  async initRun(){
   // GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${version}/pdf.worker.js`;
      if (localStorage.getItem('pdfFile') ) {
        this.pdfData = localStorage.getItem('pdfFile');
-       this.data = atob(this.pdfData.substring(Base64Prefix.length));
-
+       debugger
+      //  this.data = atob(this.pdfData.substring(Base64Prefix.length));
+      this.data = atob(this.pdfData.substring(Base64Prefix.length));
        // 利用解碼的檔案，載入 PDF 檔及第一頁
-        const pdfDoc = await pdfjsLib.getDocument(`{${this.data}}`).promise;
+        const pdfDoc = await getDocument(`{data: ${this.data}}`).promise;
         const pdfPage = await pdfDoc.getPage(1);
 
         // 設定尺寸及產生 canvas
